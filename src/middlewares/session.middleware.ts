@@ -8,7 +8,11 @@ const fileAdapter = new FileAdapter<SessionData>({dirName: "../session"});
 
 export default grammySession({
     initial: (): SessionData => ({
-        state: 'start'
+        state: 'start',
+        fsm: '',
+        data: {
+            actionId: ''
+        }
     }),
 
     storage: fileAdapter

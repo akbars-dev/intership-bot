@@ -8,12 +8,13 @@ import router from './routes';
 
 
 import { MyContext } from './types/context';
+import { mongooseConnection } from './config/mongodb';
 
 
 
 const bot = new Bot<MyContext>(process.env.BOT_TOKEN || '');
 
-
+mongooseConnection()
 
 //middlewares 
 bot.use(sessionMiddleware);
