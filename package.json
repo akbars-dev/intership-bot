@@ -1,0 +1,25 @@
+{
+  "name": "intership-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "watch": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grammyjs/router": "^2.0.0",
+    "@grammyjs/storage-file": "^2.4.2",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.23.1",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.1",
+    "typescript": "^5.4.5"
+  }
+}
